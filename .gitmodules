@@ -1,0 +1,4 @@
+
+[submodule "services/authService"]
+	path = services/authService
+	url = https://github.com/Namularbre/JWTAuthService.git

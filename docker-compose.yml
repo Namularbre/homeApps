@@ -1,0 +1,14 @@
+services:
+  auth_api:
+    build: ./services/authService
+    ports:
+      - "8080:8080"
+    volumes:
+      - /databases:/databases
+  gateway:
+    build: ./gateway/
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      - NGINX_HOST=namu.fr
